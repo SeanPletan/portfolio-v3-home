@@ -109,6 +109,7 @@ const handleCamera = () => {
 
     camera.rotation.y = (-2 * Math.PI * scrollPercentage)
     camera.position.x = (radius * Math.sin(Math.PI * 2 * scrollPercentage))
+    camera.position.y = -10 * Math.sin((Math.PI * 0.75)* scrollPercentage) + 2
     camera.position.z = -(radius * Math.cos(Math.PI * 2 * scrollPercentage))
 }
 
